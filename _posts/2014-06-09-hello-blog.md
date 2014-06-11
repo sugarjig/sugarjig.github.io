@@ -12,7 +12,7 @@ I just completed [GitHub's Hello World guide](https://guides.github.com/activiti
 
 ## Emojis
 
-There are something like 800 emojis (:astonished:) available in GitHub's markdown. User @arvida made a big [cheat sheet](http://www.emoji-cheat-sheet.com/).
+There are something like 800 emojis available in GitHub's markdown. User @arvida made a big [cheat sheet](http://www.emoji-cheat-sheet.com/).
 
 
 ## Closing issues via commit messages
