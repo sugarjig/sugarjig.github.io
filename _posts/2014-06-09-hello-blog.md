@@ -1,6 +1,5 @@
 ---
 title: Hello Blog
-layout: default
 ---
 
 This is my first attempt at using GitHub Pages. I'm going to give this [Jekyll](http://jekyllrb.com/) thing a try. I sure hope I'm doing it right.
