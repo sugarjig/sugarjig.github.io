@@ -1,0 +1,55 @@
+---
+title: Posting Entities to a REST Resource's Many-to-Many Relationship
+---
+
+I'm trying to learn the Spring Framework and some of its many subprojects, including Spring Boot, Spring MVC, Spring Security, Spring Data REST, and Spring Data JPA. To that end, I am putting together a toy project: https://github.com/sugarjig/gametrack. It is an app to track progress in a video game you're playing, with information specific to that game. For example, if you're playing Borderlands, the app would have a list of all the missions, and you could check them off as you go along. I'm starting off with a REST API for now, but I plan on extending it to some kind of web app.
+
+As a start, I created a couple of JPA entities: Game and Platform. By platform, I really mean online store, like Steam. There is a many-to-many relationship between these two; a game could be available on both Steam and GOG, for instance. So, after creating my Spring repositories, which were used to generate my CRUD REST API, I had to figure out how to post a many-to-many relationship to the API.
+
+It turned out to be fairly simple. First, I had to post a game:
+```
+curl -i -X POST -H "Content-Type:application/json" -d '{"name": "Fallout"}' http://localhost:8080/games
+```
+
+Then, I had to post a couple of platforms:
+```
+curl -i -X POST -H "Content-Type:application/json" -d '{"name": "GOG"}' http://localhost:8080/platforms
+curl -i -X POST -H "Content-Type:application/json" -d '{"name": "Steam"}' http://localhost:8080/platforms
+```
+
+Finally, I had to update the original game:
+```
+curl -i -X PATCH -H "Content-Type:application/json" -d '{"platforms": ["/platforms/1", "/platforms/2"]}' http://localhost:8080/games/1
+```
+
+Notice the array of URLs set to the `platforms` field. Since platforms are a REST resource, the API uses the URLs to link them to the game. I'm not sure if it is specific to the way Spring Data REST works, or the way HATEOS REST APIs are "supposed" to do it.
+
+When I get the platforms for the game resource, I can see the platforms I have added:
+```
+curl -i -X GET http://localhost:8080/games/1/platforms
+{
+  "_embedded" : {
+    "platforms" : [ {
+      "name" : "GOG",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/platforms/1"
+        },
+        "games" : {
+          "href" : "http://localhost:8080/platforms/1/games"
+        }
+      }
+    }, {
+      "name" : "Steam",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/platforms/2"
+        },
+        "games" : {
+          "href" : "http://localhost:8080/platforms/2/games"
+        }
+      }
+    } ]
+  }
+}
+```
