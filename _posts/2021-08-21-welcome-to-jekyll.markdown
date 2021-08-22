@@ -1,29 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Hello Jekyll!"
 date:   2021-08-21 20:36:15 -0400
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+Now here's something I've been meaning to do forever: create a personal website. I've had many false starts at this over the years. Most of my attempts used WordPress. My most recent attempt used [GitHub Pages](https://pages.github.com), albeit the more automated variety with a "supported" theme. As I try to build a professional network, I thought it was time to take this project more seriously. So here is the next, and hopefully final, restart.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+I still want to use GitHub Pages to host my site, but I want a little more control. This time I created a site from scratch using Jekyll. GitHub has good [documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll) for this.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Hopefully I'll be back soon with posts on continuous delivery, backend development, and Bitcoin!
