@@ -19,3 +19,8 @@ On every team, I advocate for continuous delivery principals, such as comprehens
 Despite my interest in continuous delivery, I still consider myself a software engineer first. I have a broad range of experience, primarily on backend systems and RESTful APIs. I value well-architected, testable code, and I don't trust my own code unless I've written tests!
 
 In addition to my day-to-day work, I am interested in Bitcoin and its many technological and economic innovations.
+
+## Publications
+
+* [The pros and cons of programming in Go](https://willowtreeapps.com/ideas/the-pros-and-cons-of-programming-in-go) - March 2, 2018
+* [How Feature Toggles Can Enable A/B Testing in Mobile Apps](https://willowtreeapps.com/ideas/how-feature-toggles-can-enable-ab-testing-in-mobile-apps) - September 26, 2016
