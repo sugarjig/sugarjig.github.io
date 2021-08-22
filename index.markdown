@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+I'm a software engineer focused on backend, APIs, and continuous delivery. In addition to my professional experience, I have falled down the Bitcoin rabbit hole. Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/).
