@@ -27,6 +27,8 @@ url: "https://sugarjig.github.io" # the base hostname & protocol for your site, 
 domain: sugarjig.github.io
 twitter_username: btcsamjones
 github_username:  sugarjig
+linkedin_username: samueldjones
+show_excerpts: true
 
 # Build settings
 theme: minima
