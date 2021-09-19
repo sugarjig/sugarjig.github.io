@@ -8,6 +8,8 @@ title: Software Engineer
 
 ## About Me
 
+![Profile Photo](/assets/images/profile.png)
+
 I'm a software engineer focused on backend, APIs, and continuous delivery. I have 13 years of professional experience, first working as a defense contractor, and most recently working at a client services agency serving many different business verticals.
 
 No matter the platform or the business, my main goals are to __provide value__ and __help teams perform better__. I advocate for continuous delivery principals, such as comprehensive automation and building quality in, as well as patterns, such as trunk-based development, feature toggles, and branch by abstraction.
