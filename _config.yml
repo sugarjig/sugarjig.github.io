@@ -28,6 +28,9 @@ domain: samjones.io
 twitter_username: btcsamjones
 github_username:  sugarjig
 linkedin_username: samueldjones
+mastodon:
+  - username: btcsam
+    instance: bitcoinhackers.org
 show_excerpts: true
 minima:
   date_format: "%Y-%m-%d"
