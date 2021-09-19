@@ -3,7 +3,10 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Software Engineer
 ---
+
+## About Me
 
 I'm a software engineer focused on backend, APIs, and continuous delivery. I have 13 years of professional experience, first working as a defense contractor, and most recently working at a client services agency serving many different business verticals.
 
