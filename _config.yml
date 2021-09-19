@@ -20,6 +20,7 @@
 
 title: Sam Jones
 email: sam@samjones.io
+tagline: A software engineer's personal site
 description: >- # this means to ignore newlines until "baseurl:"
   Personal site for an experienced software engineer
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -34,6 +35,18 @@ mastodon:
 show_excerpts: true
 minima:
   date_format: "%Y-%m-%d"
+author:
+  twitter: btcsamjones
+twitter:
+  username: btcsamjones
+  card: summary
+social:
+  name: Sam Jones
+  links:
+    - https://twitter.com/btcsamjones
+    - https://github.com/sugarjig
+    - https://www.linkedin.com/in/samueldjones/
+    - https://keybase.io/samdjones
 
 # Build settings
 theme: minima
