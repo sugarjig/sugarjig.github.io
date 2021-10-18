@@ -9,7 +9,7 @@ title: Software Engineer
 
 I'm a software engineer focused on backend, APIs, and continuous delivery. I have 13 years of professional experience. I start my career as a defense contractor. I currently work at a client services agency, which serves many many brands in different business verticals.
 
-No matter the platform or the business, my main goals are to __provide value__ and __help teams perform better__. I advocate for continuous delivery principals, such as comprehensive automation and building quality in, as well as patterns, such as trunk-based development, feature toggles, and branch by abstraction.
+No matter the platform or the business, my main goals are to __provide value__ and __help teams perform better__. I advocate for [continuous delivery principles](https://continuousdelivery.com/principles/), such as comprehensive automation and building quality in, as well as patterns, such as trunk-based development, feature toggles, and branch by abstraction.
 
 - Led a team building a mobile app's backend in ASP.NET Core on Azure
 - Led a multi-month database vendor migration with no service disruption, saving countless hours of maintenance and operations time
