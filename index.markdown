@@ -1,9 +1,7 @@
 ---
 layout: home
-title: Software Engineer
+title: About Me
 ---
-
-## About Me
 
 ![Profile Photo](/assets/images/profile.png)
 
