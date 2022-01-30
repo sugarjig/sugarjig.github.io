@@ -1,5 +1,4 @@
 ---
-layout: single
 title:  "Hello Jekyll!"
 date:   2021-08-21 20:36:15 -0400
 tags: jekyll

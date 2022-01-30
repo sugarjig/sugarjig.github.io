@@ -18,41 +18,78 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+locale: en-US
 title: Sam Jones
-email: sam@samjones.io
-tagline: A software engineer's personal site
-description: >- # this means to ignore newlines until "baseurl:"
-  Personal site for an experienced software engineer
+subtitle: Software Engineer
+name: Sam Jones
+description: Personal site for an experienced software engineer
+url: "https://samjones.io"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://samjones.io" # the base hostname & protocol for your site, e.g. http://example.com
-domain: samjones.io
-twitter_username: btcsamjones
-github_username:  sugarjig
-linkedin_username: samueldjones
-mastodon:
-  - username: btcsam
-    instance: bitcoinhackers.org
-show_excerpts: true
-minima:
-  date_format: "%Y-%m-%d"
-author:
-  twitter: btcsamjones
+repository: sugarjig/sugarjig.github.io
+#teaser: /assets/images/profile.png
+#logo: /assets/images/profile.png
 twitter:
   username: btcsamjones
-  card: summary
+og_image: /assets/images/profile.png
 social:
-  name: Sam Jones
   links:
-    - https://twitter.com/btcsamjones
-    - https://github.com/sugarjig
-    - https://www.linkedin.com/in/samueldjones/
-    - https://keybase.io/samdjones
+    - "https://twitter.com/btcsamjones"
+    - "https://www.linkedin.com/in/samueldjones/"
+    - "https://bitcoinhackers.org/@btcsam"
+    - "https://keybase.io/samdjones"
+author:
+  name: Sam Jones
+  avatar: /assets/images/profile.png
+  bio: Experienced software engineer interested in backend, continuous delivery, and Bitcoin
+  location: Virginia, USA
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: "https://github.com/sugarjig"
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: "https://www.linkedin.com/in/samueldjones/"
+    - label: Mastodon
+      icon: fab fa-fw fa-mastodon
+      url: "https://bitcoinhackers.org/@btcsam"
+    - label: Twitter
+      icon: fab fa-fw fa-twitter
+      url: "https://twitter.com/btcsamjones"
+footer:
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: "https://github.com/sugarjig"
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: "https://www.linkedin.com/in/samueldjones/"
+    - label: Mastodon
+      icon: fab fa-fw fa-mastodon
+      url: "https://bitcoinhackers.org/@btcsam"
+    - label: Twitter
+      icon: fab fa-fw fa-twitter
+      url: "https://twitter.com/btcsamjones"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+      show_date: true
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+
+minimal_mistakes_skin: dark
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,5 +1,4 @@
 ---
-layout: single
 title:  "GitHub Pages Custom Domain"
 date:   2021-09-18 17:26:00 -0400
 tags: jekyll github-pages

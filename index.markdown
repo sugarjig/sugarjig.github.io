@@ -1,9 +1,8 @@
 ---
 layout: home
+author_profile: true
 title: About Me
 ---
-
-![Profile Photo](/assets/images/profile.png)
 
 I'm a software engineer focused on backend, APIs, and continuous delivery. I have 13 years of professional experience. I started my career as a defense contractor. I currently work at a client services agency, which serves many brands in different business verticals.
 
