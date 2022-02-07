@@ -17,3 +17,27 @@ If more and more effort is required to make changes to the software, then the de
 > The only way to go fast, is to go well.
 
 Developers often think that they can rebuild from scratch, but better. But the same overconfidence that drove the first poor design will only create the same messes.
+
+Programs that work perfectly but are too expensive to change will become useless once the requirements change. Programs that are easy to change will keep up with the requirements. Business managers may say that they want current functionality over future ease of change, but they will not be happy if the developers allow the system to become too expensive to change. Developers are hired to maintain a good architecture. It is their responsibility to assert its importance. It is always a struggle, but developers are stakeholders and therefore have an interest in the software's success.
+
+## Programming Paradigms
+
+Each paradigm takes capabilities away from the programmer.
+
+### Structured Programming
+
+> Structure programming imposes discipline on direct transfer of control.
+
+Structured programming introduced functional decomposition, allowing programmers to break problems down into smaller and smaller problems.
+
+### Object-Oriented Programming
+
+> Object-oriented programming imposes discipline on indirect transfer of control.
+
+Object-oriented programming introduced polymorphism, which enables dependency inversion. Components can be deployed and devoloped independently.
+
+### Functional Programming
+
+> Functional programming imposes discipline upon assignment.
+
+Functional programming introduced immutable variables. This eliminates the problems faced in concurrent programming. It is best to move as much code as possible into immutable components.
