@@ -41,3 +41,37 @@ Object-oriented programming introduced polymorphism, which enables dependency in
 > Functional programming imposes discipline upon assignment.
 
 Functional programming introduced immutable variables. This eliminates the problems faced in concurrent programming. It is best to move as much code as possible into immutable components.
+
+## Design Principles
+
+The goal of SOLID principles is to create software that
+
+- tolerates change
+- is easy to understand
+- is the basis of components that can be used in many software systems
+
+### Single Responsibility Principle (SRP)
+
+> A module should be responsible to one, and only one, actor.
+
+> Separate the code that different actors depend on.
+
+### Open-Closed Principle (OCP)
+
+Higher-level code should not be impacted by changes made to lower-level code. We want to make the easy to change without increasing the impact of change.
+
+### Liskov Substitution Principle (LSP)
+
+Components in a system must conform to a contract in order be substitutable for one another.
+
+### Interface Segregation Principle (ISP)
+
+Don't depend on things you don't use.
+
+### Dependency Inversion Principle (DIP)
+
+> Details should depend on policies.
+
+## Component Principles
+
+
