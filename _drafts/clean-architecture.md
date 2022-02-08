@@ -74,4 +74,34 @@ Don't depend on things you don't use.
 
 ## Component Principles
 
+### Component Cohesion
 
+#### Reuse/Release Equivalence Principle (REP)
+
+> The granule of reuse is the granule of release.
+
+The classes and modules in a component must be part of a cohesive group.
+
+#### Common Closure Principle (CCP)
+
+> Gather into components those classes that change for the same reasons and at the same times. Separate into different components those classes that change at different times and for different reasons.
+
+This is similar to the Single Responsibility Principle.
+
+> Gather together those things that change at the same times and for the same reasons. Separate those things that change at different times or for different reasons.
+
+#### Common Reuse Princicple (CRP)
+
+> Don't force users of a component to depend on things they don't need.
+
+"Classes that are not tightly bound to each other should not be in the same component."
+
+This is related to the Interface Segregation Principle.
+
+> Don't depend on things you don't need.
+
+#### Tension
+
+- REP and CCP: Too many unneeded releases
+- CCP and CRP: Hard to reuse
+- CRP and REP: Too many components change
