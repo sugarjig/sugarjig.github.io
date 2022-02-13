@@ -19,3 +19,7 @@ In addition to my day-to-day work, I am interested in [Bitcoin](https://bitcoin.
 When I get free time, you can find me spending it with my wife and two boys. Occasionally I’ll do some work on my house.
 
 Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for more details about my experience.
+
+## Open Source Contributions
+
+- [Libbitcoin Homebrew formulae](https://github.com/Homebrew/homebrew-core/pulls?q=is%3Apr+author%3Asugarjig+is%3Aclosed)
