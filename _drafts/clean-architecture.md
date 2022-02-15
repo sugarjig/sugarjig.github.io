@@ -105,3 +105,11 @@ This is related to the Interface Segregation Principle.
 - REP and CCP: Too many unneeded releases
 - CCP and CRP: Hard to reuse
 - CRP and REP: Too many components change
+
+### Component Coupling
+
+#### Acyclic Dependencies Principle
+
+> Allow no cycles in the component dependency graph.
+
+
