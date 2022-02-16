@@ -112,4 +112,26 @@ This is related to the Interface Segregation Principle.
 
 > Allow no cycles in the component dependency graph.
 
+Break down the system into separately releaseable components. Each component can be owned by a single developer or an entire team. When a component is working, it is assigned a release version and made available to other teams.
 
+#### The Stable Dependencies Principle
+
+> Depend in the direction of stability
+
+A component that his hard to change should not depend on volatile components.
+
+Stability: when a component has many incoming dependencies
+
+- Fan-in: Incoming dependencies
+- Fan-out: Outgoing dependencies
+- Instability (I): I = Fan-out / (Fan-in + Fan-out). Range of 0-1, where 0 is maximally stable, and 1 is maximally unstable
+
+#### The Stable Abstractions Principle
+
+> A component should be as abstract as it is stable.
+
+> Dependencies run in the direction of abstraction.
+
+- Nc: Number of classes in component
+- Na: Number of abstract classes and interfaces in component
+- Abstractness (A): A = Na / Nc. 0 means no abstrac classes, 1 means no concrete classes
