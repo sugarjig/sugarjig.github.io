@@ -147,3 +147,19 @@ One can perform statistical analysis of a design and calculate the mean and vari
 Distance (D): D = |A + I - 1|
 
 One can perform statistical analysis of a design and calculate the mean and variance of D for all components. A "good" design would have a mean and variance of close to zero.
+
+## Architecture
+
+### What Is Architecture?
+
+Architecture is the shape of the system, the purpose of which is to facilitate development, deployment, operation, and maintenance.
+
+> The strategy behind that facilitation is to leave as many options open as possible, for as long as possible.
+
+"The ultimate goal is to minimaize the lifetime cost of the system and to maximize programmer productivity."
+
+Architecture should allow software to be deployed in a single action. It should also make use cases, features, and required behaviors first-class citizens that are immediately visible to developers.
+
+The options we need to leave open are the details that don't matter. All software can be broken down into policy and details. Policy is where the true value lies. Architecture makes details irrelevant to the policy, allowing decisions to be delayed and deferred. The longer you wait to make the decisons, the more information you have to make the properly.
+
+> A good architect maximizes the number of decisons not made.
