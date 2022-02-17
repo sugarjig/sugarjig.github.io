@@ -221,7 +221,11 @@ __Use case:__ "a description of the way that an automated system is used." It de
 
 ### The Clean Architecture
 
+This looks the same as the blog post.
+
 Several architectures have emerged over time.
+
+<insert image>
 
 - Hexagonal Architecture
 - DCI
@@ -234,3 +238,16 @@ All have the following characteristics:
 - Independent of the UI
 - Independent of the database
 - Independent of any external agency
+
+> _Dependency Rule:_ Source code dependencies must point only inward, toward higher-level policies.
+
+"The name of something declared in an outer circle must not be mentioned by the code in an inner circle."
+
+- __Entities__: "encapsulate enterprise-wide Critical Business Rules"
+- __Use Cases__: "contain application-specific business rules; orchestrate the flow of data to and from the entities, and direct those entities to use their Critical Business Rules to achieve the goals of the use case."
+- __Interface Adapters__: "convert data from the format most convenient for the use cases and entities, to the format most convenient for some external agency such as the database or the web."
+- __Frameworks and Drivders__: "frameworks and tools such as the database and the web framework." "where all the details go"
+
+You may need more than four circles, but the Dependency Rule always applies.
+
+Use the Dependency Inversion Principle so that the source code dependencies oppose the flow of control. When crossing boundaries, use the data in the form most convenient for the inner circle.
