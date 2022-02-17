@@ -194,3 +194,43 @@ Draw boundaries on the axis of change. Components on one side change at differen
 Level: The distance from the inputs and outputs.
 
 The farther away from the inputs and outputs, the higher the level. Source code dependencies should be decoupled from data flow and coupled to level.
+
+### Business Rules
+
+Business rules make or save the business money. This is true whether executed on a computer or not.
+
+_Critical Business Rules_ would exist even if they were not automated.
+
+_Critical Business Data_ would exist even if the system were not automated.
+
+__Entity:__ "an object within our computer system that embodies a small set of critical business rules operating on Critical Business Data." It is "pure business and nothing else."
+
+__Use case:__ "a description of the way that an automated system is used." It describes _application-specific_ business rules as opposed to Critical Business Rules.
+
+"Use cases control the dance of the Entities." They "do not descibe how the system appears to the user."
+
+### Screaming Architecture
+
+"software architectures are structures that support the use cases of the system."
+
+"Frameworks are options to be left open."
+
+"Frameworks are tools, not ways of life"
+
+"Develop a strategy that prevents the fraemwork from taking over that architecture."
+
+### The Clean Architecture
+
+Several architectures have emerged over time.
+
+- Hexagonal Architecture
+- DCI
+- BCE
+
+All have the following characteristics:
+
+- Independent of frameworks
+- Testable
+- Independent of the UI
+- Independent of the database
+- Independent of any external agency
