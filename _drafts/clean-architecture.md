@@ -180,3 +180,17 @@ Decoupling layers can be done at the following levels:
 Service-level decoupling is expensive in development time and system resources
 
 Good architecture can start as a monolith, then grow to a set of independently deployable units, up to independent services. It can also allow for reversing back to a monolith.
+
+### Boundaries: Drawing Lines
+
+Draw lines between things that matter and things that don't. Business rules don't need to anything about the database schema or query language. "The IO is irrelevant."
+
+Treat the UI and database as plugins. Replacing one for another might not be trivial, but it could be practical if we start with the idea of them as plugins.
+
+Draw boundaries on the axis of change. Components on one side change at different rates and for different reasons.
+
+### Policy and Level
+
+Level: The distance from the inputs and outputs.
+
+The farther away from the inputs and outputs, the higher the level. Source code dependencies should be decoupled from data flow and coupled to level.
