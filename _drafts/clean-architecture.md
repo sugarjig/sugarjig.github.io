@@ -163,3 +163,20 @@ Architecture should allow software to be deployed in a single action. It should 
 The options we need to leave open are the details that don't matter. All software can be broken down into policy and details. Policy is where the true value lies. Architecture makes details irrelevant to the policy, allowing decisions to be delayed and deferred. The longer you wait to make the decisons, the more information you have to make the properly.
 
 > A good architect maximizes the number of decisons not made.
+
+### Independence
+
+Architects should leave operational decisions open. "A good architecture makes the system easy to change, in all the ways that it must change, by leavng options open."
+
+"If two apparently duplicated sections of code evolve along different paths--if they change at different rates, and for different reasons--then they are not true duplicates."
+
+"Resist the temptation to commit the sin of knee-jerk elimination of duplication." "Creating the separate view model is not a lot of effort, and it will help you keep the layers propertly decoupled."
+
+Decoupling layers can be done at the following levels:
+- Source level
+- Deployment level: JARs, DLLs, shared libraries, etc.; communication over functions calls or IPC/sockets/shared memory
+- Service level: communication over network
+
+Service-level decoupling is expensive in development time and system resources
+
+Good architecture can start as a monolith, then grow to a set of independently deployable units, up to independent services. It can also allow for reversing back to a monolith.
