@@ -135,3 +135,15 @@ Stability: when a component has many incoming dependencies
 - Nc: Number of classes in component
 - Na: Number of abstract classes and interfaces in component
 - Abstractness (A): A = Na / Nc. 0 means no abstrac classes, 1 means no concrete classes
+
+- The Zone of Pain: highly stable and concrete; database schema is an example; nonvolatile components are harmless here
+- The Zone of Uselessness: maximally abstract, no dependencies
+- The Main Sequence: line between stable/abstract and unstable/concrete; best to put components on or close to this line
+
+Distance (D): D = |A + I - 1|
+
+One can perform statistical analysis of a design and calculate the mean and variance of D for all components.
+
+Distance (D): D = |A + I - 1|
+
+One can perform statistical analysis of a design and calculate the mean and variance of D for all components. A "good" design would have a mean and variance of close to zero.
