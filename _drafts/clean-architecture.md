@@ -282,3 +282,17 @@ Fully implemented boundaries are expensive. When they are ignored, they are very
 Using services is not necessarily an architecture. The services could still be strongly coupled by the data they share.
 
 Large enterprise systems can still be monoliths. Services cannot always be independently developed, deployed, and operated.
+
+### The Test Boundary
+
+Tests are part of the system. They participate in the architecture. Tests are the outermost circle in the architecture, and they are independently deployable.
+
+Fragile tests can make the system rigid. To solve for this, design for testability. Business rules should be able to be tested without the GUI. Create a testing API that has superpowers that allow tests to bypass normal restrictions.
+
+### Clean Embedded Architecture
+
+Firmware isn't firm because of where it is stored, but because of how hard it is to change as the hardware changes.
+
+_App-titude test:_ "Programmers who just concern themselves with getting their app to work are doing their products and employers a disservice. There is much more to programming than just getting an app to work."
+
+Make the embedded software testable outside of the target hardware. Use a hardware abstraction layer. It should be designed to fit the software's needs. Similarly, use an operating system abstraction layer.
