@@ -251,3 +251,34 @@ All have the following characteristics:
 You may need more than four circles, but the Dependency Rule always applies.
 
 Use the Dependency Inversion Principle so that the source code dependencies oppose the flow of control. When crossing boundaries, use the data in the form most convenient for the inner circle.
+
+### Presenters and Humble Objects
+
+__Humble Object pattern:__ "originally identified as a way to help unit testers to separate behaviors that are hard to test from hehaviors that are easy to test."
+
+View: humble object that is hard to test
+Presenter: testable object; formats data for the View, places it in a data structure called View Model
+
+The View merely loads data form the View Model onto the screen. (making it humble)
+
+ORMs should exist in the database layer; are another example of a Humble Object
+
+The Humble Object is useful at architecture boundaries. They increase the testability of the system.
+
+### Partial Boundaries
+
+"Do all the work necessary to create independently compilable and deployable components, and then simply keep them together in the same component."
+
+### Layers and Boundaries
+
+Fully implemented boundaries are expensive. When they are ignored, they are very expensive to add in later. You must watch the system as it evolves, adding boundaries when required.
+
+### The Main Component
+
+"The Main component is the ultimate detail--the lowest-level policy." "The dirtiest of all the dirty components."
+
+### Services: Great and Small
+
+Using services is not necessarily an architecture. The services could still be strongly coupled by the data they share.
+
+Large enterprise systems can still be monoliths. Services cannot always be independently developed, deployed, and operated.
