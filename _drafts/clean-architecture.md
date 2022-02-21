@@ -225,7 +225,7 @@ This looks the same as the blog post.
 
 Several architectures have emerged over time.
 
-<insert image>
+`insert image`
 
 - Hexagonal Architecture
 - DCI
