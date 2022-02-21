@@ -1,14 +1,15 @@
 ---
-title: "Clean Architecture: A Book Review"
+title: "Clean Architecture: A Book Summary"
+toc: true
 ---
 
-A book that I've wanted to read for a long time is [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/) by Robert C. Martin (a.k.a Uncle Bob). I came across his [2012 blog post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) on the topic. It made so much sense to me that I went on to design an entire web service around its core principles. I evangalize it to this day. But I never read the book, published in 2018.
+A book that I've wanted to read for a long time is [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/) by Robert C. Martin (a.k.a Uncle Bob). I came across his [2012 blog post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) a while back. It made so much sense to me that I went on to design an entire web service around its core principles. I evangalize it to this day.
 
-Having just finished it, I wanted to summarize the highlights here, as a way to solidify its concepts.
+I never read the book, though. I finally picked it up, and I wanted to summarize the highlights here, as a way to solidify its concepts in my mind. This post is mainly for my own future reference.
+
+-----
 
 ## Introduction
-
-There is no difference between design and architecture. Low-level details and high-level details are part of the same whole.
 
 > The goal of software architecture is to minimize the human resources required to build and maintain the required system.
 
@@ -18,17 +19,19 @@ If more and more effort is required to make changes to the software, then the de
 
 Developers often think that they can rebuild from scratch, but better. But the same overconfidence that drove the first poor design will only create the same messes.
 
-Programs that work perfectly but are too expensive to change will become useless once the requirements change. Programs that are easy to change will keep up with the requirements. Business managers may say that they want current functionality over future ease of change, but they will not be happy if the developers allow the system to become too expensive to change. Developers are hired to maintain a good architecture. It is their responsibility to assert its importance. It is always a struggle, but developers are stakeholders and therefore have an interest in the software's success.
+Programs that work perfectly but are too expensive to change will become useless once the requirements change. Programs that are easy to change can keep up with the requirements.
+
+Business managers may say that they want current functionality over future ease of change, but they will not be happy if the developers allow the system to become too expensive to change. Developers are hired to maintain a good architecture. It is their responsibility to assert its importance. It is always a struggle, but developers are stakeholders and therefore have an interest in the software's success.
 
 ## Programming Paradigms
 
-Each paradigm takes capabilities away from the programmer.
+A few paradigms have been introduced throughout the history of programming. Each paradigm takes capabilities away from the programmer.
 
 ### Structured Programming
 
 > Structure programming imposes discipline on direct transfer of control.
 
-Structured programming introduced functional decomposition, allowing programmers to break problems down into smaller and smaller problems.
+Structured programming introduced functional decomposition, allowing programmers to break problems down into smaller and smaller problems. It removes the ability to use `goto` statements.
 
 ### Object-Oriented Programming
 
@@ -223,13 +226,13 @@ __Use case:__ "a description of the way that an automated system is used." It de
 
 This looks the same as the blog post.
 
+![The Clean Architecture](/assets/images/CleanArchitecture.jpeg)
+
 Several architectures have emerged over time.
 
-`insert image`
-
-- Hexagonal Architecture
-- DCI
-- BCE
+- [Hexagonal Architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)
+- [Data, Context, Interaction (DCI)](https://en.wikipedia.org/wiki/Data,_context_and_interaction)
+- [Boundary-Control-Entity (BCE)](https://en.wikipedia.org/wiki/Entity-control-boundary)
 
 All have the following characteristics:
 
@@ -318,3 +321,7 @@ Frameworks tend to not follow a clean architecture. They violate the Dependency 
 Treat the framework as a detail. Keep it in inthe outermost circles.
 
 Don't sprinkle `@autowired` throughout your business objects.
+
+-----
+
+Overall, Clean Architecture was a good read, but not an essential one. The book takes the ideas from the original blog post and expands on them, strengthening the case for using them. But the blog post alone is powerful enough that you can design an entire system around its concepts, like I did!
