@@ -5,7 +5,7 @@ toc: true
 
 A book that I've wanted to read for a long time is [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/) by Robert C. Martin (a.k.a Uncle Bob). I came across his [2012 blog post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) a while back. It made so much sense to me that I went on to design an entire web service around its core principles. I evangalize it to this day.
 
-I never read the book, though. I finally picked it up, and I wanted to summarize the highlights here, as a way to solidify its concepts in my mind. This post is mainly for my own future reference.
+Despite hanging my hat on the blog post, I never read the book until now. I wanted to summarize the highlights here, as a way to solidify its concepts in my mind. This post is mainly for my own future reference.
 
 -----
 
@@ -47,7 +47,7 @@ Functional programming introduced immutable variables. This eliminates the probl
 
 ## Design Principles
 
-The goal of SOLID principles is to create software that
+The goal of [SOLID principles](https://en.wikipedia.org/wiki/SOLID) is to create software that
 
 - tolerates change
 - is easy to understand
@@ -57,23 +57,31 @@ The goal of SOLID principles is to create software that
 
 > A module should be responsible to one, and only one, actor.
 
+Put another way, if one actor requires a change to a module, that change should not affect other actors.
+
 > Separate the code that different actors depend on.
 
 ### Open-Closed Principle (OCP)
 
-Higher-level code should not be impacted by changes made to lower-level code. We want to make the easy to change without increasing the impact of change.
+> A software artifact should be open for extension but closed for modification.
+
+I always had a hard time wrapping my head around this principle. How can you say that software is closed for modification? The key to understanding it is realizing that it should be possible to change the behavior of a system without affecting the parts that have no knowledge of the change. Higher-level code should not be impacted by changes made to lower-level code. We want to make the code easy to change without increasing the impact of change. We can accomplish this by adhering to the other principles.
 
 ### Liskov Substitution Principle (LSP)
 
-Components in a system must conform to a contract in order be substitutable for one another.
+> If for each object o1 of type S there is an object o2 of type T such that for all programs P defined in terms of T, the behavior of P is unchanged when o1 is substituted for o2 then S is a subtype of T.
+
+Cutting though the formal math definition, what this is saying is that components in a system must conform to a contract in order be substitutable for one another.
 
 ### Interface Segregation Principle (ISP)
 
-Don't depend on things you don't use.
+This can be summed up as: Don't depend on things you don't use.
 
 ### Dependency Inversion Principle (DIP)
 
 > Details should depend on policies.
+
+The rest of the book covers what details and policies are, but the important point is that policies should never depend on details.
 
 ## Component Principles
 
