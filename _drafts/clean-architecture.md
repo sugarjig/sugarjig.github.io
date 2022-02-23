@@ -53,6 +53,8 @@ The goal of [SOLID principles](https://en.wikipedia.org/wiki/SOLID) is to create
 - is easy to understand
 - is the basis of components that can be used in many software systems
 
+Many software engineers have heard of the SOLID principles, but in my experience they are often misunderstood and ignored as a result.
+
 ### Single Responsibility Principle (SRP)
 
 > A module should be responsible to one, and only one, actor.
@@ -65,7 +67,7 @@ Put another way, if one actor requires a change to a module, that change should 
 
 > A software artifact should be open for extension but closed for modification.
 
-I always had a hard time wrapping my head around this principle. How can you say that software is closed for modification? The key to understanding it is realizing that it should be possible to change the behavior of a system without affecting the parts that have no knowledge of the change. Higher-level code should not be impacted by changes made to lower-level code. We want to make the code easy to change without increasing the impact of change. We can accomplish this by adhering to the other principles.
+Of all the SOLID principles, this is the one I had a hard time grasping. How can software be closed for modification? The key to understanding it is realizing that higher-level code should not be impacted by changes made to lower-level code. We want to make the code easy to change without increasing the impact of change. We can accomplish this by adhering to the other principles.
 
 ### Liskov Substitution Principle (LSP)
 
@@ -75,29 +77,35 @@ Cutting though the formal math definition, what this is saying is that component
 
 ### Interface Segregation Principle (ISP)
 
-This can be summed up as: Don't depend on things you don't use.
+This can be summed up as: Don't depend on things you don't use. If you avoid unnecessary dependencies, you avoid being affected by change.
 
 ### Dependency Inversion Principle (DIP)
 
 > Details should depend on policies.
 
-The rest of the book covers what details and policies are, but the important point is that policies should never depend on details.
+The rest of the book covers what details and policies are, but the important point is that policies should never depend on details, nor should they have any _knowledge_ of details.
 
 ## Component Principles
 
+The component principles are like the SOLID principles, but at a larger scale. They tell us how to build software systems out of smaller components.
+
+This is the real meat of the Clean Architecture book.
+
 ### Component Cohesion
+
+These principles guide how to decide which classes should be included in which components.
 
 #### Reuse/Release Equivalence Principle (REP)
 
 > The granule of reuse is the granule of release.
 
-The classes and modules in a component must be part of a cohesive group.
+The classes and modules in a component must be part of a cohesive group. They should be releasable together.
 
 #### Common Closure Principle (CCP)
 
 > Gather into components those classes that change for the same reasons and at the same times. Separate into different components those classes that change at different times and for different reasons.
 
-This is similar to the Single Responsibility Principle.
+This is similar to the Single Responsibility Principle. Both can be summed up as the following:
 
 > Gather together those things that change at the same times and for the same reasons. Separate those things that change at different times or for different reasons.
 
@@ -105,19 +113,27 @@ This is similar to the Single Responsibility Principle.
 
 > Don't force users of a component to depend on things they don't need.
 
-"Classes that are not tightly bound to each other should not be in the same component."
+If you include unrelated code in your component, and that code changes, you will force users to recompile and revlidate their own code.
 
-This is related to the Interface Segregation Principle.
+This is related to the Interface Segregation Principle. Both can be summed up as the following:
 
 > Don't depend on things you don't need.
 
 #### Tension
 
+There is a tension among the three principles, which forms a triangle. If you focus too much on two of the three principles, you get the following:
+
 - REP and CCP: Too many unneeded releases
 - CCP and CRP: Hard to reuse
 - CRP and REP: Too many components change
 
+Architects must find a position in the triangle to meet the system's current needs, but also realize that those needs will change over time.
+
 ### Component Coupling
+
+These principles deal with the relationships between components.
+
+Martin introduces some very useful metrics in this part of the book.
 
 #### Acyclic Dependencies Principle
 
@@ -129,13 +145,15 @@ Break down the system into separately releaseable components. Each component can
 
 > Depend in the direction of stability
 
-A component that his hard to change should not depend on volatile components.
+A component that his hard to change should not depend on volatile components. An example would be a component containing business rules depending on the GUI component.
 
-Stability: when a component has many incoming dependencies
+A component with many incoming dependencies is considered stable. It takes a lot of work to change this component.
 
-- Fan-in: Incoming dependencies
-- Fan-out: Outgoing dependencies
-- Instability (I): I = Fan-out / (Fan-in + Fan-out). Range of 0-1, where 0 is maximally stable, and 1 is maximally unstable
+##### Stability Metrics
+
+- `Fan-in`: Incoming dependencies
+- `Fan-out`: Outgoing dependencies
+- `I: Instability`: `I = Fan-out / (Fan-in + Fan-out)`. Range of 0-1, where 0 is maximally stable, and 1 is maximally unstable
 
 #### The Stable Abstractions Principle
 
