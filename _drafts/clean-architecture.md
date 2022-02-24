@@ -181,6 +181,8 @@ We can plot components on a graph with `I` as the x-axis and `A` as the y-axis.
 - The Zone of Uselessness: area around `(1,1)`, maximally abstract, no dependencies
 - The Main Sequence: line between stable/abstract and unstable/concrete; best to put components on or close to this line
 
+We can measure the distance from the Main Sequence of each component:
+
 `D: Distance`: `D = |A + I - 1|`
 
 One can perform statistical analysis of a design and calculate the mean and variance of D for all components. A "good" design will have a mean and variance of close to zero.
