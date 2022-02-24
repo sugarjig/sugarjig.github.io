@@ -89,8 +89,6 @@ The rest of the book covers what details and policies are, but the important poi
 
 The component principles are like the SOLID principles, but at a larger scale. They tell us how to build software systems out of smaller components.
 
-This is the real meat of the Clean Architecture book.
-
 ### Component Cohesion
 
 These principles guide how to decide which classes should be included in which components.
@@ -153,31 +151,43 @@ A component with many incoming dependencies is considered stable. It takes a lot
 
 - `Fan-in`: Incoming dependencies
 - `Fan-out`: Outgoing dependencies
-- `I: Instability`: `I = Fan-out / (Fan-in + Fan-out)`. Range of 0-1, where 0 is maximally stable, and 1 is maximally unstable
+- `I: Instability`: `I = Fan-out / (Fan-in + Fan-out)`
+
+Maximally stable components will have an `I` of 0, while maximally unstable components will have an `I` of 1.
 
 #### The Stable Abstractions Principle
 
 > A component should be as abstract as it is stable.
 
+A stable component should be composed of interfaces and abstract classes so that it can be extended.
+
 > Dependencies run in the direction of abstraction.
 
-- Nc: Number of classes in component
-- Na: Number of abstract classes and interfaces in component
-- Abstractness (A): A = Na / Nc. 0 means no abstrac classes, 1 means no concrete classes
+Put another way, concrete components depend on abstract components.
 
-- The Zone of Pain: highly stable and concrete; database schema is an example; nonvolatile components are harmless here
-- The Zone of Uselessness: maximally abstract, no dependencies
+##### Abstraction Metrics
+
+- `Nc`: Number of classes in component
+- `Na`: Number of abstract classes and interfaces in component
+- `A: Abstractness`: `A = Na / Nc`
+
+An `A` of 0 means no abstract classes, while an `A` of 1 means nothing but abstract classes.
+
+##### Plotting Stability and Abstraction
+
+We can plot components on a graph with `I` as the x-axis and `A` as the y-axis.
+
+- The Zone of Pain: area around `(0,0)`, highly stable and concrete; database schema is an example; nonvolatile components are harmless here
+- The Zone of Uselessness: area around `(1,1)`, maximally abstract, no dependencies
 - The Main Sequence: line between stable/abstract and unstable/concrete; best to put components on or close to this line
 
-Distance (D): D = |A + I - 1|
+`D: Distance`: `D = |A + I - 1|`
 
-One can perform statistical analysis of a design and calculate the mean and variance of D for all components.
-
-Distance (D): D = |A + I - 1|
-
-One can perform statistical analysis of a design and calculate the mean and variance of D for all components. A "good" design would have a mean and variance of close to zero.
+One can perform statistical analysis of a design and calculate the mean and variance of D for all components. A "good" design will have a mean and variance of close to zero.
 
 ## Architecture
+
+Now we finally put all these principles together and discuss how to make apply them to software architecture. This is the real meat of the Clean Architecture Book.
 
 ### What Is Architecture?
 
