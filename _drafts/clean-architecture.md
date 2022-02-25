@@ -197,30 +197,26 @@ Architecture is the shape of the system, the purpose of which is to facilitate d
 
 > The strategy behind that facilitation is to leave as many options open as possible, for as long as possible.
 
-"The ultimate goal is to minimaize the lifetime cost of the system and to maximize programmer productivity."
+The ultimate goal of a good architecture is to minimaize cost and to maximize productivity.
 
 Architecture should allow software to be deployed in a single action. It should also make use cases, features, and required behaviors first-class citizens that are immediately visible to developers.
 
-The options we need to leave open are the details that don't matter. All software can be broken down into policy and details. Policy is where the true value lies. Architecture makes details irrelevant to the policy, allowing decisions to be delayed and deferred. The longer you wait to make the decisons, the more information you have to make the properly.
+Leave as many options open as possible. The options we need to leave open are the details that don't matter. Policy is the important part of the system. Architecture makes details irrelevant to the policy, allowing decisions to be delayed and deferred. The longer you wait to make the decisons, the more information you have to make them properly.
 
 > A good architect maximizes the number of decisons not made.
 
 ### Independence
 
-Architects should leave operational decisions open. "A good architecture makes the system easy to change, in all the ways that it must change, by leavng options open."
+Architects should leave operational decisions open, which will make the system easy to change. 
 
-"If two apparently duplicated sections of code evolve along different paths--if they change at different rates, and for different reasons--then they are not true duplicates."
-
-"Resist the temptation to commit the sin of knee-jerk elimination of duplication." "Creating the separate view model is not a lot of effort, and it will help you keep the layers propertly decoupled."
+Code that appears to be duplicated, but that changes at different rates and for different reasons, is not truly duplicated. An example is an entity vs. the related request/response models. This code should remain independent. It will take more effort up front, but will save effort in the long run.
 
 Decoupling layers can be done at the following levels:
-- Source level
-- Deployment level: JARs, DLLs, shared libraries, etc.; communication over functions calls or IPC/sockets/shared memory
-- Service level: communication over network
+- Source
+- Deployment (JARs, DLLs, shared libraries, etc.; communication over functions calls or IPC/sockets/shared memory)
+- Service (communication over network)
 
-Service-level decoupling is expensive in development time and system resources
-
-Good architecture can start as a monolith, then grow to a set of independently deployable units, up to independent services. It can also allow for reversing back to a monolith.
+Service-level decoupling is expensive in terms of development time and system resources. Good architecture can start as a monolith, then grow to a set of independently deployable units, up to independent services. It can also allow for reversing back to a monolith.
 
 ### Boundaries: Drawing Lines
 
@@ -232,37 +228,19 @@ Draw boundaries on the axis of change. Components on one side change at differen
 
 ### Policy and Level
 
-Level: The distance from the inputs and outputs.
-
-The farther away from the inputs and outputs, the higher the level. Source code dependencies should be decoupled from data flow and coupled to level.
+Level is defined as the distance from the inputs and outputs. The farther away from the inputs and outputs, the higher the level. Source code dependencies should be decoupled from data flow and coupled to level.
 
 ### Business Rules
 
-Business rules make or save the business money. This is true whether executed on a computer or not.
+Business rules make or save the business money. This is true whether executed on a computer or not. _Critical Business Rules_ would exist even if they were not automated. _Critical Business Data_ would exist even if the system were not automated.
 
-_Critical Business Rules_ would exist even if they were not automated.
+__Entity:__ "an object within our computer system that embodies a small set of critical business rules operating on Critical Business Data." It is nothing but pure business.
 
-_Critical Business Data_ would exist even if the system were not automated.
-
-__Entity:__ "an object within our computer system that embodies a small set of critical business rules operating on Critical Business Data." It is "pure business and nothing else."
-
-__Use case:__ "a description of the way that an automated system is used." It describes _application-specific_ business rules as opposed to Critical Business Rules.
-
-"Use cases control the dance of the Entities." They "do not descibe how the system appears to the user."
-
-### Screaming Architecture
-
-"software architectures are structures that support the use cases of the system."
-
-"Frameworks are options to be left open."
-
-"Frameworks are tools, not ways of life"
-
-"Develop a strategy that prevents the fraemwork from taking over that architecture."
+__Use case:__ "a description of the way that an automated system is used." It describes _application-specific_ business rules as opposed to Critical Business Rules. It controls the "dance of the Entities." It does not define how the system is presented.
 
 ### The Clean Architecture
 
-This looks the same as the blog post.
+This entire chapter is essentially the same as Martin's original [blog post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
 ![The Clean Architecture](/assets/images/CleanArchitecture.jpeg)
 
@@ -280,14 +258,16 @@ All have the following characteristics:
 - Independent of the database
 - Independent of any external agency
 
-> _Dependency Rule:_ Source code dependencies must point only inward, toward higher-level policies.
+The most important rule of the architecture is the _Dependency Rule_:
 
-"The name of something declared in an outer circle must not be mentioned by the code in an inner circle."
+> Source code dependencies must point only inward, toward higher-level policies.
+
+Code in an inner circle must not reference by name code in an outer circle
 
 - __Entities__: "encapsulate enterprise-wide Critical Business Rules"
 - __Use Cases__: "contain application-specific business rules; orchestrate the flow of data to and from the entities, and direct those entities to use their Critical Business Rules to achieve the goals of the use case."
 - __Interface Adapters__: "convert data from the format most convenient for the use cases and entities, to the format most convenient for some external agency such as the database or the web."
-- __Frameworks and Drivders__: "frameworks and tools such as the database and the web framework." "where all the details go"
+- __Frameworks and Drivers__: "frameworks and tools such as the database and the web framework." This circle is "where all the details go."
 
 You may need more than four circles, but the Dependency Rule always applies.
 
