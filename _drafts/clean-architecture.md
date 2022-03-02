@@ -246,7 +246,7 @@ This entire chapter is essentially the same as Martin's original [blog post](htt
 
 Several architectures have emerged over time.
 
-- [Hexagonal Architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)
+- [Hexagonal Architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software))
 - [Data, Context, Interaction (DCI)](https://en.wikipedia.org/wiki/Data,_context_and_interaction)
 - [Boundary-Control-Entity (BCE)](https://en.wikipedia.org/wiki/Entity-control-boundary)
 
@@ -276,19 +276,10 @@ Use the Dependency Inversion Principle so that the source code dependencies oppo
 ### Presenters and Humble Objects
 
 __Humble Object pattern:__ "originally identified as a way to help unit testers to separate behaviors that are hard to test from hehaviors that are easy to test."
+__View:__ humble object that is hard to test
+__Presenter:__ testable object; formats data for the View, places it in a data structure called View Model
 
-View: humble object that is hard to test
-Presenter: testable object; formats data for the View, places it in a data structure called View Model
-
-The View merely loads data form the View Model onto the screen. (making it humble)
-
-ORMs should exist in the database layer; are another example of a Humble Object
-
-The Humble Object is useful at architecture boundaries. They increase the testability of the system.
-
-### Partial Boundaries
-
-"Do all the work necessary to create independently compilable and deployable components, and then simply keep them together in the same component."
+The View merely loads data form the View Model onto the screen, making it humble. Another example of a Humble Object is an ORM, which should only exist in the database layer. The Humble Object is useful at architecture boundaries. They increase the testability of the system.
 
 ### Layers and Boundaries
 
@@ -296,7 +287,7 @@ Fully implemented boundaries are expensive. When they are ignored, they are very
 
 ### The Main Component
 
-"The Main component is the ultimate detail--the lowest-level policy." "The dirtiest of all the dirty components."
+That Main component is the "ultimate detail." It is the "dirtiest of all the dirty components."
 
 ### Services: Great and Small
 
@@ -314,7 +305,7 @@ Fragile tests can make the system rigid. To solve for this, design for testabili
 
 Firmware isn't firm because of where it is stored, but because of how hard it is to change as the hardware changes.
 
-_App-titude test:_ "Programmers who just concern themselves with getting their app to work are doing their products and employers a disservice. There is much more to programming than just getting an app to work."
+_App-titude test_: "Programmers who just concern themselves with getting their app to work are doing their products and employers a disservice. There is much more to programming than just getting an app to work."
 
 Make the embedded software testable outside of the target hardware. Use a hardware abstraction layer. It should be designed to fit the software's needs. Similarly, use an operating system abstraction layer.
 
