@@ -1,5 +1,7 @@
 ---
 title: "Clean Architecture: A Book Summary"
+date: 2022-03-03 17:22:00 -0500
+tags: architecture
 toc: true
 ---
 
