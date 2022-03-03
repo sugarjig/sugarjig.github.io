@@ -313,23 +313,19 @@ Make the embedded software testable outside of the target hardware. Use a hardwa
 
 ### The Database Is a Detail
 
-"The database is not the data model." Inner circles should have no knowledge of the database schema. Only the outer most circles should have knowledge of the database.
+The database is not the data model. Inner circles should have no knowledge of the database schema. Only the outer most circles should have knowledge of the database.
 
 ### The Web Is a Detail
 
-"The GUI is a detail." "The WEB is an IO device."
+The GUI is a detail, and the WEB is an IO device.
 
 ### Frameworks Are Details
 
-"The relationship between you and framework author is extraordinarily asymmetric." You must do everything the framework wants, and the framework authors owe you nothing.
-
-Frameworks tend to not follow a clean architecture. They violate the Dependency Rule. They want you to inerhit their code into your Entities, which are in the innermost circle. "The wedding ring is on your finger; and it's going to stay there."
+You must do everything the framework wants, and the framework authors owe you nothing. Frameworks tend to not follow a clean architecture. They violate the Dependency Rule. They want you to inerhit their code into your Entities, which are in the innermost circle. "The wedding ring is on your finger; and it's going to stay there."
 
 > Don't marry the framework!
 
-Treat the framework as a detail. Keep it in inthe outermost circles.
-
-Don't sprinkle `@autowired` throughout your business objects.
+Treat the framework as a detail. Keep it in inthe outermost circles. For example, if using Spring, don't sprinkle `@autowired` throughout your business objects.
 
 -----
 
