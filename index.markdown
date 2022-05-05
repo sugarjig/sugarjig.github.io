@@ -23,3 +23,7 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for m
 ## Open Source Contributions
 
 - [Libbitcoin Homebrew formulae](https://github.com/Homebrew/homebrew-core/pulls?q=is%3Apr+author%3Asugarjig+is%3Aclosed)
+
+## External Blog Posts
+
+- [The pros and cons of programming in Go](https://www.willowtreeapps.com/craft/the-pros-and-cons-of-programming-in-go) - May 5, 2018
