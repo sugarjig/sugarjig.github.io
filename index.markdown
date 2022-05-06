@@ -20,6 +20,12 @@ When I get free time, you can find me spending it with my wife and two boys. Occ
 
 Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for more details about my experience.
 
+## Current Book
+
+[Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914/) by David Farley
+
+![Modern Software Engineering](https://m.media-amazon.com/images/I/51yoGJnG8HL.jpg)
+
 ## Open Source Contributions
 
 - [Libbitcoin Homebrew formulae](https://github.com/Homebrew/homebrew-core/pulls?q=is%3Apr+author%3Asugarjig+is%3Aclosed)
