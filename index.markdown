@@ -38,7 +38,7 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for m
 
 ## Open Source Contributions
 
-- [Libbitcoin Homebrew formulae](https://github.com/Homebrew/homebrew-core/pulls?q=is%3Apr+author%3Asugarjig+is%3Aclosed)
+- [Homebrew formulae](https://github.com/Homebrew/homebrew-core/pulls?q=is%3Apr+author%3Asugarjig+is%3Aclosed) for libbitcoin and secp256k1
 
 ## External Blog Posts
 
