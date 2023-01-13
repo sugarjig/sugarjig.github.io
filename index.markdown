@@ -20,11 +20,21 @@ When I get free time, you can find me spending it with my wife and two boys. Occ
 
 Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for more details about my experience.
 
-## Current Book
+## Current Book(s)
 
-[Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914/) by David Farley
+[Mastering the Lightning Network](https://www.amazon.com/Mastering-Lightning-Network-Blockchain-Protocol/dp/1492054860/) by Andreas M. Antonopoulos, Olaoluwa Osuntokun, and René Pickhardt
 
-![Modern Software Engineering](https://m.media-amazon.com/images/I/51yoGJnG8HL.jpg)
+![Mastering the Lightning Network](https://m.media-amazon.com/images/I/71++Tb-OQKL.jpg)
+
+[The Fiat Standard](https://www.amazon.com/Fiat-Standard-Slavery-Alternative-Civilization/dp/1544526474/) by Saifedean Ammous
+
+![The Fiat Standard](https://m.media-amazon.com/images/I/51ni0z99-HL.jpg)
+
+## Recent Reads
+
+- [Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914/) by David Farley
+- [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/) by Robert Martin
+- [Programming Bitcoin](https://www.amazon.com/Programming-Bitcoin-Learn-Program-Scratch/dp/1492031496/) by Jimmy Song
 
 ## Open Source Contributions
 
