@@ -26,10 +26,6 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for m
 
 ![Mastering the Lightning Network](https://m.media-amazon.com/images/I/71++Tb-OQKL.jpg)
 
-[The Fiat Standard](https://www.amazon.com/Fiat-Standard-Slavery-Alternative-Civilization/dp/1544526474/) by Saifedean Ammous
-
-![The Fiat Standard](https://m.media-amazon.com/images/I/51ni0z99-HL.jpg)
-
 ## Recent Reads
 
 - [Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914/) by David Farley
