@@ -28,6 +28,7 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for m
 
 ## Recent Reads
 
+- [The Fiat Standard](https://www.amazon.com/Fiat-Standard-Slavery-Alternative-Civilization/dp/1544526474/) by Saifedean Ammous
 - [Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914/) by David Farley
 - [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/) by Robert Martin
 - [Programming Bitcoin](https://www.amazon.com/Programming-Bitcoin-Learn-Program-Scratch/dp/1492031496/) by Jimmy Song
