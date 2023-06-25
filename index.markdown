@@ -24,7 +24,7 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for m
 
 [Mastering the Lightning Network](https://www.amazon.com/Mastering-Lightning-Network-Blockchain-Protocol/dp/1492054860/) by Andreas M. Antonopoulos, Olaoluwa Osuntokun, and René Pickhardt
 
-![Mastering the Lightning Network](https://m.media-amazon.com/images/I/71++Tb-OQKL.jpg)
+![Mastering the Lightning Network](assets/images/MasteringTheLightningNetwork.jpg)
 
 ## Recent Reads
 
