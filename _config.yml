@@ -50,9 +50,6 @@ author:
     - label: LinkedIn
       icon: fab fa-fw fa-linkedin
       url: "https://www.linkedin.com/in/samueldjones/"
-    - label: Mastodon
-      icon: fab fa-fw fa-mastodon
-      url: "https://bitcoinhackers.org/@btcsam"
     - label: Twitter
       icon: fab fa-fw fa-twitter
       url: "https://twitter.com/btcsamjones"
@@ -67,9 +64,6 @@ footer:
     - label: LinkedIn
       icon: fab fa-fw fa-linkedin
       url: "https://www.linkedin.com/in/samueldjones/"
-    - label: Mastodon
-      icon: fab fa-fw fa-mastodon
-      url: "https://bitcoinhackers.org/@btcsam"
     - label: Twitter
       icon: fab fa-fw fa-twitter
       url: "https://twitter.com/btcsamjones"
