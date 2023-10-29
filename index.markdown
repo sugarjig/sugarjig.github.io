@@ -22,16 +22,13 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for m
 
 ## Current Book(s)
 
-[21 Lessons: What I've Learned from Falling Down the Bitcoin Rabbit Hole](https://www.amazon.com/21-Lessons-Learned-Falling-Bitcoin/dp/1697526349/) by Gigi
-
-![21 Lessons](assets/images/21Lessons.jpg)
-
 [Mastering the Lightning Network](https://www.amazon.com/Mastering-Lightning-Network-Blockchain-Protocol/dp/1492054860/) by Andreas M. Antonopoulos, Olaoluwa Osuntokun, and René Pickhardt
 
 ![Mastering the Lightning Network](assets/images/MasteringTheLightningNetwork.jpg)
 
 ## Recent Reads
 
+- [21 Lessons: What I've Learned from Falling Down the Bitcoin Rabbit Hole](https://www.amazon.com/21-Lessons-Learned-Falling-Bitcoin/dp/1697526349/) by Gigi
 - [The Fiat Standard](https://www.amazon.com/Fiat-Standard-Slavery-Alternative-Civilization/dp/1544526474/) by Saifedean Ammous
 - [Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914/) by David Farley
 - [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/) by Robert Martin
