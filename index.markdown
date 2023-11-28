@@ -22,12 +22,14 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for m
 
 ## Current Book(s)
 
-[Mastering the Lightning Network](https://www.amazon.com/Mastering-Lightning-Network-Blockchain-Protocol/dp/1492054860/) by Andreas M. Antonopoulos, Olaoluwa Osuntokun, and René Pickhardt
+[Principles of Economics](https://www.amazon.com/Audible-Principles-of-Economics/dp/B0CJCL64CX/) by Saifedean Ammous
 
-![Mastering the Lightning Network](assets/images/MasteringTheLightningNetwork.jpg)
+![Principles of Economics](assets/images/PrinciplesOfEconomics.jpg)
 
 ## Recent Reads
 
+- [How AI Works: From Sorcery to Science](https://www.amazon.com/How-AI-Works-Sorcery-Science/dp/1718503725/) by Ronald T. Kneusel
+- [Mastering the Lightning Network](https://www.amazon.com/Mastering-Lightning-Network-Blockchain-Protocol/dp/1492054860/) by Andreas M. Antonopoulos, Olaoluwa Osuntokun, and René Pickhardt
 - [21 Lessons: What I've Learned from Falling Down the Bitcoin Rabbit Hole](https://www.amazon.com/21-Lessons-Learned-Falling-Bitcoin/dp/1697526349/) by Gigi
 - [The Fiat Standard](https://www.amazon.com/Fiat-Standard-Slavery-Alternative-Civilization/dp/1544526474/) by Saifedean Ammous
 - [Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914/) by David Farley
