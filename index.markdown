@@ -4,7 +4,7 @@ author_profile: true
 title: About Me
 ---
 
-I'm a software engineer focused on backend, APIs, and continuous delivery. I have 15 years of professional experience. I started my career as a defense contractor. I currently work at a client services agency, which serves many brands in different business verticals.
+I'm a software engineer focused on backend, APIs, and continuous delivery. I have 15 years of professional experience. I currently work at a client services agency, which serves many brands in different business verticals.
 
 No matter the platform or the business, my main goals are to __provide value__ and __help teams perform better__. I advocate for [continuous delivery principles](https://continuousdelivery.com/principles/), such as comprehensive automation and building quality in, as well as patterns, such as trunk-based development, feature toggles, and branch by abstraction.
 
@@ -16,7 +16,7 @@ No matter the platform or the business, my main goals are to __provide value__ a
 
 In addition to my day-to-day work, I am interested in [Bitcoin](https://bitcoin.org/en/) and its many technological and economic innovations.
 
-When I get free time, you can find me spending it with my wife and four boys. Occasionally I’ll do some work on my house.
+When I get free time, you can find me spending it with my wife and four boys. Occasionally, I’ll do some work on my house.
 
 Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for more details about my experience.
 
