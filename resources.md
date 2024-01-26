@@ -10,6 +10,7 @@ You might notice that many of these are either written by Martin Fowler or on hi
 - [The Agile Fluency Model](https://martinfowler.com/articles/agileFluency.html)
 - [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [Consumer-Drive Contracts: A Service Evolution Pattern](https://martinfowler.com/articles/consumerDrivenContracts.html)
+- [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html) - Martin Fowler
 - [Enterprise Integration Using REST](https://martinfowler.com/articles/enterpriseREST.html)
 - [Eradicating Non-Determinism in Tests](https://martinfowler.com/articles/nonDeterminism.html)
 - [Evolutionary Database Design](https://martinfowler.com/articles/evodb.html)
