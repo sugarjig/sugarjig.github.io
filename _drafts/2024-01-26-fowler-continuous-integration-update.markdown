@@ -5,13 +5,15 @@ date: 2024-01-26
 
 Martin Fowler recently updated his [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html) article. It's a great read, and I highly recommend it. I've been doing continuous integration for a long time, and I learned a lot from it.
 
-had a convo recently - misunderstanding of CI - the point is to integrate as frequently as possible
-devs are overly concerned with continuing progress but it's only progress for them
+recently shared with other engineers - misunderstanding of CI - the point is to integrate as frequently as possible
+devs are overly concerned with continuing progress but it's only progress for them (https://graphite.dev/)
 they don't focus on merging their changes and ensuring that the team as a whole is making progress
 
 devs come up with solutions like "stacked PRs" - misses the point
 the problem is a social one, not a technical or logistical one
 if you're not getting your changes into mainline, you're not communicating with your team
+"how do my changes affect your work?"
+when you practice real CI, you are giving everyone a chance to see if your changes integrate well with theirs
 
 > Semi-Integration (it isn't Continuous Integration)
 >
@@ -35,7 +37,9 @@ From "Everyone can see what's happening"
 
 From "Less time wasted in integration"
 
-> With high-frequency integration, our source control system becomes a communication channel, one that can communicate things that can otherwise be unsaid.
+> What's happening here is that we are seeing much closer collaboration between the members of the team. Should two developers make decisions that conflict, we find out when we integrate. So the less time between integrations, the less time before we detect the conflict, and we can deal with the conflict before it grows too big. **With high-frequency integration, our source control system becomes a communication channel, one that can communicate things that can otherwise be unsaid.**
+
+======
 
 many concerns about including "dead" code in production
 use my favorite techniques
@@ -48,3 +52,8 @@ Note: this advice applies to professional software teams working closley togethe
 Added to my Resources page
 
 CI serves as a critical foundation to Continuous Delivery
+
+frequently merging changes reduces the risk of integration problems
+holding on to feature branches for a long time increases the risk of integration problems
+
+![Your Communication's Bad](../assets/images/zoidberg.jpg)
