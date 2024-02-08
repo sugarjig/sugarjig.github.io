@@ -14,6 +14,7 @@ the problem is a social one, not a technical or logistical one
 if you're not getting your changes into mainline, you're not communicating with your team
 "how do my changes affect your work?"
 when you practice real CI, you are giving everyone a chance to see if your changes integrate well with theirs
+you're not sharing what's in your mind
 
 > Semi-Integration (it isn't Continuous Integration)
 >
