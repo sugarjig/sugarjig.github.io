@@ -22,9 +22,9 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for m
 
 ## Current Book(s)
 
-[Principles of Economics](https://www.amazon.com/Audible-Principles-of-Economics/dp/B0CJCL64CX/) by Saifedean Ammous
+[I Am Not Your Bruh](https://store.bitcoinmagazine.com/collections/books/products/i-am-not-your-bruh) by George Mekhail
 
-![Principles of Economics](assets/images/PrinciplesOfEconomics.jpg)
+![Principles of Economics](assets/images/IAmNotYourBruh.png)
 
 ## Recent Reads
 
