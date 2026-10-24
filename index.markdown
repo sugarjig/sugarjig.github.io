@@ -39,6 +39,7 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/samueldjones/) for m
 ## Open Source Contributions
 
 - [Homebrew formulae](https://github.com/Homebrew/homebrew-core/pulls?q=is%3Apr+author%3Asugarjig+is%3Aclosed) for libbitcoin, secp256k1, core-lightning, and others
+- [vcpkg port](https://github.com/microsoft/vcpkg/pull/54575) for chadwick
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">This project was started at last <a href="https://twitter.com/tabconf?ref_src=twsrc%5Etfw">@tabconf</a> w/ <a href="https://twitter.com/btcsamjones?ref_src=twsrc%5Etfw">@btcsamjones</a> <a href="https://twitter.com/PoleVaultDream?ref_src=twsrc%5Etfw">@PoleVaultDream</a> and <a href="https://twitter.com/dusty_daemon?ref_src=twsrc%5Etfw">@dusty_daemon</a> but it stagnated due to a dependency’s maintainer being AWAL, no PR merge<br><br>Huge W &amp; respect for <a href="https://twitter.com/btcsamjones?ref_src=twsrc%5Etfw">@btcsamjones</a> for finally bringing it in to the end zone 👏<br><br>brew install core-lightning 🚀 <a href="https://t.co/C6kuNUB6PN">https://t.co/C6kuNUB6PN</a></p>&mdash; Vivek (@Seardsalmon) <a href="https://twitter.com/Seardsalmon/status/1669018540337164288?ref_src=twsrc%5Etfw">June 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
